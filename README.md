@@ -22,6 +22,8 @@ $ ddbash
 #?!> Which dev image do you want to use?
 #?!> Available images: [ruby230 node5]
 
+$ ddbash node5
+
 Image node5_dev does not exist. Creating...
 
 ******* BUILD DEV IMAGE: node5_dev *******
