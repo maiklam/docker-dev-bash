@@ -1,0 +1,12 @@
+FROM %%BASE:TAG%%
+
+WORKDIR data
+
+ENTRYPOINT ["/entry.sh"]
+CMD ["bash"]
+
+COPY docker/add_dynamic_user.sh /add_dynamic_user.sh
+RUN chmod 755 /add_dynamic_user.sh
+
+COPY docker/entry.sh /entry.sh
+RUN chmod 755 /entry.sh
