@@ -19,7 +19,7 @@ imagemap[ruby230]="ruby:2.3.0"
 $ cd my-project/
 $ ddbash
 
-#?!> Which dev image do you want to use?
+#?!> ERR: Which dev image to use?
 #?!> Available images: [ruby230 node5]
 
 $ ddbash node5
@@ -34,7 +34,7 @@ Step 1 : FROM node:5
 ...
 Successfully built c7d718fc7d5f
 
-******* START DEV IMAGE: *******
+******* START DEV CONTAINER: *******
 
 #> Bash version: 4.3.42(1)-release
 #> Using image [node5_dev]

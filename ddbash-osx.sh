@@ -37,7 +37,7 @@ function buildDevDockerImage() {
 function printInvalidImageError() {
   echo ""
   if [ $# -eq 0 ]; then
-    echo "#?!> Which dev image do you want to use?"
+    echo "#?!> ERR: Which dev image to use?"
   else
     echo "#?!> Base image for $1 not defined"
   fi
@@ -58,7 +58,7 @@ else
       buildDevDockerImage $DEV_IMAGE
     fi
 
-    echo -e "\n******* START DEV IMAGE: *******\n"
+    echo -e "\n******* START DEV CONTAINER: *******\n"
     $DIR/run-dev-docker-osx.sh ${DEV_IMAGE}
   else
     printInvalidImageError $1
